@@ -1,0 +1,13 @@
+1. Create a class QueenChessBoard.
+2. The board configuration is stored in a list called columns where if c = columns[r], then a queen is at column c and row r.
+3. The class provides methods to place a queen in the next row given the column, remove the queen from the last row where a queen is present, check whether a given column is safe to place a queen in the next free row and to display the board.
+4. Define the function solve_queen that takes the size of the board as argument.
+5. It creates a QueenChessBoard object with that size.
+6. A while loop is created with condition True.
+7. In each iteration, it is checked to see in which column a queen can be placed in the first available row of the board. This is done using another loop inside the while loop.
+8. If such a column is there, the queen is placed there and the inner loop is stopped.
+9. After the inner loop, if a column was not found or the board became full, then we need to backtrack.
+10. If the board is full, then before backtracking, we need to display the board.
+11. Backtracking is done by removing the queen from the last filled row and making the next iteration try column values above the column values of the queen just removed.
+12. If it is found that no more queens can be removed, then we are finished.
+13. The number of solutions is kept track of and printed at the end.

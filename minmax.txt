@@ -1,0 +1,33 @@
+def tic tac toe
+    Play a tic-tac-toe game between the two given functions. After each
+    turn, yield the new board.
+    Each function should get a tic-tac-toe board and a char - 'X' or 'O',
+    that represents the current turn, and return the number of
+    square where it wants to put a sign.
+    width is the board's width and length - it's 3 as default.
+
+    X, O -- functions
+    width -- natural number
+
+def displayTicTacToe(X, O, width=3):
+    """Play a tic-tac-toe game (see TicTacToe's docstring for explanation) and
+    display the new board to the user when a player plays, and the result of
+    the game after its end.
+
+    X, O - functions
+    width - natural number"""
+
+def result(board):
+    """Return 'X' if X won in the given board, 'O' if O won, None if the game
+    ended with a tie, False if the game didn't end yet, and raise an exception
+    if it looks like X and O won both (the board cannot be reached using a
+    legal game)."""
+def minimax_best_square(board, turn):
+    """Choose a square where it's worthwhile to play in the given board and
+    turn, and return a tuple of the square's number and it's score according
+    to the minimax algorithm."""
+
+"""Return 1, 0 or -1 according to the minimax algorithm -- 1 if the player
+    that has the given turn has a winning strategy, 0 if he doesn't have a
+    winning strategy but he has a tie strategy, and -1 if he will lose anyway
+    (assuming his opponent is playing a perfect game)."""
